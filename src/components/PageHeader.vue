@@ -1,7 +1,12 @@
 <script>
 
+import PageNavMenu from './PageNavMenu.vue'
+
 export default {
     name: "PageHeader",
+    components: {
+        PageNavMenu
+    },
     props: {
         phoneNum: String,
         menuItems: Array
@@ -15,36 +20,26 @@ export default {
     <div class="bg-colDarkGrey">
         <div class="max-w-[920px] mx-auto border flex justify-between items-center text-gray-400 py-2 text-xs">
             <small>We have a 95% Successful Pass Rate!</small>
-            <a href="#">
+            <a href="#" class="px-2">
                 <font-awesome-icon icon="fa-solid fa-phone-flip" class="inline mx-2" />
                 <small> Give us a call to book your tuition! {{ phoneNum }} </small>
             </a>
         </div>
     </div>
 
-    <!-- Nav Banner with Logo and Menu Links -->
-    <section class="h-24 bg-colDarkGrey/[0.6]">
-        <nav class="max-w-[920px] mx-auto border flex justify-between items-center py-7">
+    <!-- Hero Section & Nav Menu -->
+    <section class="bg-hero-section bg-cover h-[580px]">
 
-            <!-- Brand Logo -->
-            <a href="#">
-                <img src="../assets/images/avada-drivers-logo-2x-200x39.png" alt="avada-logo">
-            </a>
+        <!-- Nav Banner with Logo and Menu Links -->
+        <PageNavMenu :menuItems="menuItems" />
 
-            <!-- Menu Items -->
-            <div class="text-white flex items-center gap-x-8 text-sm font-bold">
-                <template v-for="item in menuItems">
-                    <a href="#" class="hover:text-primaryGreen hover:border-b-2 border-primaryGreen h-6">{{
-                        item.toUpperCase() }}</a>
-                </template>
-                <button class="bg-primaryGreen py-2 px-4 rounded-full">BOOK NOW</button>
-            </div>
-
-        </nav>
+        <!-- Hero MVP -->
+        <section class="max-w-[920px] mx-auto border flex flex-col justify-center gap-y-3 text-white h-[484px]">
+            <h1 class="text-4xl">Drive with Avada</h1>
+            <p>We offer the finest driving tuition money can buy</p>
+        </section>
 
     </section>
-
-    <!-- Hero Section -->
 </template>
 
 <style lang="scss" scoped>

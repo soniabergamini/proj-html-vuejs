@@ -12,6 +12,9 @@ export default {
         terLightGrey: '#F6F6F6',
         colDarkGrey: '#494C4E',
         colGrey: '929AA3'
+      },
+      backgroundImage: {
+        'hero-section': "url('../assets/images/homepage-hero-background.jpg')"
       }
     },
   },
