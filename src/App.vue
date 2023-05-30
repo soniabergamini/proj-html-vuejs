@@ -22,7 +22,7 @@ export default {
 
 <template>
   <header>
-    <PageHeader :phoneNum="store.phoneNumber" />
+    <PageHeader :phoneNum="store.phoneNumber" :menuItems="store.menuItems" />
   </header>
   <main>
     <PageMain />
