@@ -1,17 +1,16 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppMain from './components/AppMain.vue'
-import AppFooter from './components/AppFooter.vue'
+import PageHeader from './components/PageHeader.vue'
+import PageMain from './components/PageMain.vue'
+import PageFooter from './components/PageFooter.vue'
 
 import { store } from './data/store';
-import axios from 'axios';
 
 export default {
   name: "App",
   components: {
-    AppHeader,
-    AppMain,
-    AppFooter
+    PageHeader,
+    PageMain,
+    PageFooter
   },
   data() {
     return {
@@ -23,14 +22,16 @@ export default {
 
 <template>
   <header>
-    <AppHeader />
+    <PageHeader />
   </header>
   <main>
-    <AppMain />
+    <PageMain />
   </main>
   <footer>
-    <AppFooter />
+    <PageFooter />
   </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use './style/variables.scss' as *;
+</style>

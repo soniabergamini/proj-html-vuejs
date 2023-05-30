@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FFFFFF'
+        primaryGreen: '#7ABC64',
+        secWhite: '#FFFFFF',
+        terLightGrey: '#F6F6F6',
+        colDarkGrey: '#494C4E',
+        colGrey: '929AA3'
       }
     },
   },
