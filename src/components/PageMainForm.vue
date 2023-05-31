@@ -7,12 +7,12 @@ export default {
 </script>
 
 <template>
-    <section class="h-[540px] bg-white">
-        <div class="h-full max-w-[920px] mx-auto border flex justify-between gap-x-7 items-start">
+    <section class="bg-white">
+        <div class="max-w-[920px] mx-auto border flex justify-between gap-x-7 items-start pb-16">
 
             <!-- Text -->
             <div class="w-1/2 self-center">
-                <h2 class="text-3xl mb-4 text-colDarkGrey">Get Behind The Wheel</h2>
+                <h2 class="text-3xl mb-4 text-colDarkGrey font-bold">Get Behind The Wheel</h2>
                 <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic voluptates fugiat
                     libero, rem at
                     a,

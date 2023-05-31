@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <section class="h-24 bg-colDarkGrey/[0.6] absolute top-0 w-full">
+    <section class="bg-colDarkGrey/[0.6] w-full">
         <nav class="max-w-[920px] mx-auto border flex justify-between items-center py-7">
 
             <!-- Brand Logo -->

@@ -1,10 +1,15 @@
 <script>
 import PageMainForm from './PageMainForm.vue'
+import PageMainCTABanner from './PageMainCTABanner.vue'
 
 export default {
     name: "PageMain",
     components: {
-        PageMainForm
+        PageMainForm,
+        PageMainCTABanner,
+    },
+    props: {
+        phoneNum: String
     }
 }
 
@@ -13,7 +18,10 @@ export default {
 <template>
     <!-- Form Section -->
     <PageMainForm />
+
     <!-- Call CTA Banner-->
+    <PageMainCTABanner :phoneNum="phoneNum" />
+
     <!-- Courses Section -->
     <!-- Instructors Section -->
     <!-- Testimonials Section -->

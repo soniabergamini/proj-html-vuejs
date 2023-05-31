@@ -20,42 +20,38 @@ export default {
     <div class="bg-colDarkGrey">
         <div class="max-w-[920px] mx-auto border flex justify-between items-center text-gray-400 py-2 text-xs">
             <small>We have a 95% Successful Pass Rate!</small>
-            <a href="#" class="px-2">
+            <a :href="`tel:${phoneNum}`" class="px-2">
                 <font-awesome-icon icon="fa-solid fa-phone-flip" class="inline mx-2" />
                 <small> Give us a call to book your tuition! {{ phoneNum }} </small>
             </a>
         </div>
     </div>
 
-    <!-- Hero Section & Nav Menu -->
+    <!-- Hero Section -->
     <section class="bg-hero-section bg-cover h-[580px]">
 
-        <!-- Nav Banner with Logo and Menu Links -->
+        <!-- Nav Menu Banner -->
         <PageNavMenu :menuItems="menuItems" />
 
-        <!-- Hero MVP & CTA Buttons -->
+        <!-- Hero MVP -->
         <section class="max-w-[920px] mx-auto border h-[484px] flex flex-col justify-center gap-y-3 text-white">
-
-            <!-- MVP -->
-            <h1 class="text-4xl">Drive with Avada</h1>
+            <h1 class="text-4xl font-bold">Drive with Avada</h1>
             <p>We offer the finest driving tuition money can buy</p>
-
-            <!-- Fixed Button CTA -->
-            <div
-                class="h-14	w-14 fixed top-28 right-2 bg-white rounded-md text-black p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
-                <font-awesome-icon icon="fa-solid fa-window-restore" size="xl" />
-                <small class="text-[10px]">Demos</small>
-            </div>
-            <div
-                class="h-14 w-14 fixed top-44 right-2 bg-white rounded-md text-black p-2 flex items-center flex-col justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
-                <span class="text-[#66BC7B] hover:text-white font-bold text-lg"><span
-                        class="text-xs align-top">$</span>39</span>
-                <small class="text-[10px]">On Sale</small>
-            </div>
-
         </section>
 
     </section>
+
+    <!-- Page Fixed Buttons -->
+    <div
+        class="h-14	w-14 fixed top-28 right-2 bg-white rounded-md text-black p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
+        <font-awesome-icon icon="fa-solid fa-window-restore" size="xl" />
+        <small class="text-[10px]">Demos</small>
+    </div>
+    <div
+        class="h-14 w-14 fixed top-44 right-2 bg-white rounded-md text-black p-2 flex items-center flex-col justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
+        <span class="text-[#66BC7B] hover:text-white font-bold text-lg"><span class="text-xs align-top">$</span>39</span>
+        <small class="text-[10px]">On Sale</small>
+    </div>
 </template>
 
 <style lang="scss" scoped>

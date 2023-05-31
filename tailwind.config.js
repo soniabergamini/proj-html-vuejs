@@ -14,7 +14,11 @@ export default {
         colGrey: '#929AA3'
       },
       backgroundImage: {
-        'hero-section': "url('../assets/images/homepage-hero-background.jpg')"
+        'hero-section': "url('../assets/images/homepage-hero-background.jpg')",
+        'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')"
+      },
+      fontFamily: {
+        'nunito-sans': 'Nunito Sans, sans-serif'
       }
     },
   },
