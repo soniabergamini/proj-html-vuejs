@@ -1,0 +1,57 @@
+<script>
+
+export default {
+    name: "PageMainForm"
+}
+
+</script>
+
+<template>
+    <section class="h-[540px] bg-white">
+        <div class="h-full max-w-[920px] mx-auto border flex justify-between gap-x-7 items-start">
+
+            <!-- Text -->
+            <div class="w-1/2 self-center">
+                <h2 class="text-3xl mb-4 text-colDarkGrey">Get Behind The Wheel</h2>
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic voluptates fugiat
+                    libero, rem at
+                    a,
+                    nesciunt cupiditate vel veritatis, quod est tenetur. Asperiores saepe aut, nisi sapiente alias dicta.
+                </p>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic voluptates fugiat libero,
+                    rem at
+                    a, nesciunt cupiditate vel veritatis, quod est tenetur. Asperiores saepe aut, nisi sapiente alias dicta.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic voluptates fugiat libero, rem
+                    at a,
+                    nesciunt cupiditate vel veritatis, quod est tenetur. Asperiores saepe aut, nisi sapiente alias
+                    dicta.</small>
+            </div>
+
+            <!-- Form -->
+            <div class="w-1/2 p-8 rounded-xl mt-[-42px] z-10 bg-white shadow-xl">
+                <h3 class="text-primaryGreen text-2xl text-center mb-8">First Lesson Free!</h3>
+                <small class="mb-7 block px-3"> When you make a block booking with us your first lesson is
+                    included
+                    free.</small>
+                <form action="#" class="text-xs flex flex-col gap-y-6 justify-center">
+                    <input class="border bg-terLightGrey p-3" type="text" name="formName" id="formName"
+                        placeholder="Your Name*" required>
+                    <input class="border bg-terLightGrey p-3" type="email" name="formEmail" id="formEmail"
+                        placeholder="Email*" required>
+                    <input class="border bg-terLightGrey p-3" type="tel" name="formPhone" id="formPhone"
+                        placeholder="Telephone" pattern="[0-9]{10}">
+                    <input class="border bg-terLightGrey p-3" type="text" name="formLocation" id="formLocation"
+                        placeholder="Location">
+                    <button type="submit"
+                        class="bg-primaryGreen border-2 border-primaryGreen py-2 px-4 rounded-full hover:bg-white hover:text-primaryGreen hover:border-primaryGreen text-white font-bold self-center">REQUEST
+                        A CALLBACK</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</template>
+
+<style lang="scss" scoped>
+@use '../style/variables.scss' as *;
+</style>

@@ -1,13 +1,18 @@
 <script>
+import PageMainForm from './PageMainForm.vue'
 
 export default {
-    name: "PageMain"
+    name: "PageMain",
+    components: {
+        PageMainForm
+    }
 }
 
 </script>
 
 <template>
     <!-- Form Section -->
+    <PageMainForm />
     <!-- Call CTA Banner-->
     <!-- Courses Section -->
     <!-- Instructors Section -->
