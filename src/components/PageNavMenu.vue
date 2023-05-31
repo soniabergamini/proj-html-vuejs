@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <section class="h-24 bg-colDarkGrey/[0.6] sticky top-0 w-full">
+    <section class="h-24 bg-colDarkGrey/[0.6] absolute top-0 w-full">
         <nav class="max-w-[920px] mx-auto border flex justify-between items-center py-7">
 
             <!-- Brand Logo -->
@@ -24,7 +24,9 @@ export default {
                     <a href="#" class="hover:text-primaryGreen hover:border-b-2 border-primaryGreen h-6">{{
                         item.toUpperCase() }}</a>
                 </template>
-                <button class="bg-primaryGreen py-2 px-4 rounded-full">BOOK NOW</button>
+                <button
+                    class="bg-primaryGreen border-2 border-primaryGreen py-2 px-4 rounded-full hover:bg-white hover:text-primaryGreen hover:border-primaryGreen">BOOK
+                    NOW</button>
             </div>
 
         </nav>
