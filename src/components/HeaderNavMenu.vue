@@ -21,11 +21,11 @@ export default {
             <!-- Menu Items -->
             <div class="text-white flex items-center gap-x-8 text-sm font-bold">
                 <template v-for="item in menuItems">
-                    <a href="#" class="hover:text-primaryGreen hover:border-b-2 border-primaryGreen h-6">{{
+                    <a href="#" class="hover:text-primarySalmon hover:border-b-2 border-primarySalmon h-6">{{
                         item.toUpperCase() }}</a>
                 </template>
                 <button
-                    class="bg-primaryGreen border-2 border-primaryGreen py-2 px-4 rounded-full hover:bg-white hover:text-primaryGreen hover:border-primaryGreen">BOOK
+                    class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon">BOOK
                     NOW</button>
             </div>
 

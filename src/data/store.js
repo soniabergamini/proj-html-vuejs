@@ -15,5 +15,10 @@ export const store = reactive({
         { name: 'Pass Plus', img: 'courses-passplus.jpg' },
         { name: 'Intensive Course', img: 'course-intensive.jpg' },
         { name: 'Instructors', img: 'courses-instructor.jpg' }
+    ],
+    succesRate: [
+        { name: 'Pass Rate', percentage: '95' },
+        { name: 'Referral Rate', percentage: '100' },
+        { name: 'Accident Rate', percentage: '0' }
     ]
 });

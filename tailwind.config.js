@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryGreen: '#7ABC64',
+        primarySalmon: '#EC7357',
+        // primaryGreen: '#7ABC64',
         secWhite: '#FFFFFF',
         terLightGrey: '#F6F6F6',
         colDarkGrey: '#494C4E',
@@ -21,6 +22,14 @@ export default {
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'
+      },
+      keyframes: {
+        progress: {
+          '0%': { 'stroke-dasharray': '0 100' },
+        }
+      },
+      animation: {
+        rotate: 'progress 1s ease-out forwards'
       }
     },
   },

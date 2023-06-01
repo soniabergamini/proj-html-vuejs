@@ -29,7 +29,7 @@ export default {
 
             <!-- Form -->
             <div class="w-1/2 p-8 rounded-xl mt-[-42px] z-10 bg-white shadow-xl">
-                <h3 class="text-primaryGreen text-2xl text-center mb-8 font-bold">First Lesson Free!</h3>
+                <h3 class="text-primarySalmon text-2xl text-center mb-8 font-bold">First Lesson Free!</h3>
                 <small class="mb-7 block px-3"> When you make a block booking with us your first lesson is
                     included
                     free.</small>
@@ -46,7 +46,7 @@ export default {
                     <input class="border bg-terLightGrey p-3" type="text" name="formLocation" id="formLocation"
                         placeholder="Location">
                     <button type="submit"
-                        class="bg-primaryGreen border-2 border-primaryGreen py-2 px-4 rounded-full hover:bg-white hover:text-primaryGreen hover:border-primaryGreen text-white font-bold self-center">REQUEST
+                        class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon text-white font-bold self-center">REQUEST
                         A CALLBACK</button>
                 </form>
             </div>
