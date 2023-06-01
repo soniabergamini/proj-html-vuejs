@@ -1,11 +1,11 @@
 <script>
 
-import PageNavMenu from './PageNavMenu.vue'
+import HeaderNavMenu from './HeaderNavMenu.vue'
 
 export default {
     name: "PageHeader",
     components: {
-        PageNavMenu
+        HeaderNavMenu
     },
     props: {
         phoneNum: String,
@@ -31,7 +31,7 @@ export default {
     <section class="bg-hero-section bg-cover h-[580px]">
 
         <!-- Nav Menu Banner -->
-        <PageNavMenu :menuItems="menuItems" />
+        <HeaderNavMenu :menuItems="menuItems" />
 
         <!-- Hero MVP -->
         <section class="max-w-[920px] mx-auto border h-[484px] flex flex-col justify-center gap-y-3 text-white">
@@ -43,12 +43,12 @@ export default {
 
     <!-- Page Fixed Buttons -->
     <div
-        class="h-14	w-14 fixed top-28 right-2 bg-white rounded-md text-black p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
+        class="h-14	w-14 fixed top-28 right-2 bg-white rounded-md text-black p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg z-20">
         <font-awesome-icon icon="fa-solid fa-window-restore" size="xl" />
         <small class="text-[10px]">Demos</small>
     </div>
     <div
-        class="h-14 w-14 fixed top-44 right-2 bg-white rounded-md text-black p-2 flex items-center flex-col justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg">
+        class="h-14 w-14 fixed top-44 right-2 bg-white rounded-md text-black p-2 flex items-center flex-col justify-center cursor-pointer hover:bg-primaryGreen hover:text-white shadow-lg z-20">
         <span class="text-[#66BC7B] hover:text-white font-bold text-lg"><span class="text-xs align-top">$</span>39</span>
         <small class="text-[10px]">On Sale</small>
     </div>

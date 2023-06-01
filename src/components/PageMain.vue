@@ -1,15 +1,18 @@
 <script>
-import PageMainForm from './PageMainForm.vue'
-import PageMainCTABanner from './PageMainCTABanner.vue'
+import MainForm from './MainForm.vue'
+import MainCTABanner from './MainCTABanner.vue'
+import MainCourses from './MainCourses.vue'
 
 export default {
     name: "PageMain",
     components: {
-        PageMainForm,
-        PageMainCTABanner,
+        MainForm,
+        MainCTABanner,
+        MainCourses,
     },
     props: {
-        phoneNum: String
+        phoneNum: String,
+        courseList: Array
     }
 }
 
@@ -17,12 +20,14 @@ export default {
 
 <template>
     <!-- Form Section -->
-    <PageMainForm />
+    <MainForm />
 
     <!-- Call CTA Banner-->
-    <PageMainCTABanner :phoneNum="phoneNum" />
+    <MainCTABanner :phoneNum="phoneNum" />
 
     <!-- Courses Section -->
+    <MainCourses :courseList="courseList" />
+
     <!-- Instructors Section -->
     <!-- Testimonials Section -->
     <!-- News Section -->

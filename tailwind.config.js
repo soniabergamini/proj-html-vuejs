@@ -11,11 +11,13 @@ export default {
         secWhite: '#FFFFFF',
         terLightGrey: '#F6F6F6',
         colDarkGrey: '#494C4E',
-        colGrey: '#929AA3'
+        colGrey: '#929AA3',
+        colBlue: '#7799AD'
       },
       backgroundImage: {
         'hero-section': "url('../assets/images/homepage-hero-background.jpg')",
-        'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')"
+        'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')",
+        'courses-section': "url('../assets/images/promise-background.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'

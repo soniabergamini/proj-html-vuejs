@@ -10,5 +10,10 @@ export const store = reactive({
         "courses",
         "locations",
         "blog"
+    ],
+    courseList: [
+        { name: 'Pass Plus', img: 'courses-passplus.jpg' },
+        { name: 'Intensive Course', img: 'course-intensive.jpg' },
+        { name: 'Instructors', img: 'courses-instructor.jpg' }
     ]
 });

@@ -29,13 +29,16 @@ export default {
 
             <!-- Form -->
             <div class="w-1/2 p-8 rounded-xl mt-[-42px] z-10 bg-white shadow-xl">
-                <h3 class="text-primaryGreen text-2xl text-center mb-8">First Lesson Free!</h3>
+                <h3 class="text-primaryGreen text-2xl text-center mb-8 font-bold">First Lesson Free!</h3>
                 <small class="mb-7 block px-3"> When you make a block booking with us your first lesson is
                     included
                     free.</small>
                 <form action="#" class="text-xs flex flex-col gap-y-6 justify-center">
-                    <input class="border bg-terLightGrey p-3" type="text" name="formName" id="formName"
-                        placeholder="Your Name*" required>
+                    <div class="relative">
+                        <input class="border bg-terLightGrey p-3 w-full" type="text" name="formName" id="formName"
+                            placeholder="Your Name*" required>
+                        <img src="../assets/images/image.png" alt="input-icon" class="absolute top-[35%] right-1">
+                    </div>
                     <input class="border bg-terLightGrey p-3" type="email" name="formEmail" id="formEmail"
                         placeholder="Email*" required>
                     <input class="border bg-terLightGrey p-3" type="tel" name="formPhone" id="formPhone"

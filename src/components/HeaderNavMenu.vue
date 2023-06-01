@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "PageNavMenu",
+    name: "HeaderNavMenu",
     props: {
         menuItems: Array
     },

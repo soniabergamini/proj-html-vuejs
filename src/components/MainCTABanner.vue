@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "PageMainCTABanner",
+    name: "MainCTABanner",
     props: {
         phoneNum: String
     }
