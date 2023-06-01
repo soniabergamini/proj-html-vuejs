@@ -1,14 +1,14 @@
 <script>
 
 export default {
-    name: "PageMainForm"
+    name: "MainForm"
 }
 
 </script>
 
 <template>
-    <section class="bg-white">
-        <div class="max-w-[920px] mx-auto border flex justify-between gap-x-7 items-start pb-16">
+    <section>
+        <div class="max-w-[920px] mx-auto flex justify-between gap-x-7 items-start pb-16">
 
             <!-- Text -->
             <div class="w-1/2 self-center">

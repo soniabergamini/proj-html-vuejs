@@ -3,6 +3,7 @@ import MainForm from './MainForm.vue'
 import MainCTABanner from './MainCTABanner.vue'
 import MainCourses from './MainCourses.vue'
 import MainSuccessRate from './MainSuccessRate.vue'
+import MainInstructors from './MainInstructors.vue'
 
 export default {
     name: "PageMain",
@@ -10,12 +11,14 @@ export default {
         MainForm,
         MainCTABanner,
         MainCourses,
-        MainSuccessRate
+        MainSuccessRate,
+        MainInstructors
     },
     props: {
         phoneNum: String,
         courseList: Array,
-        succesRate: Array
+        succesRate: Array,
+        instructors: Array
     }
 }
 
@@ -33,6 +36,8 @@ export default {
     <MainSuccessRate :succesRate="succesRate" />
 
     <!-- Instructors Section -->
+    <MainInstructors :instructors="instructors" />
+
     <!-- Testimonials Section -->
     <!-- News Section -->
     <!-- Newsletter Banner -->

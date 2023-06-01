@@ -18,7 +18,7 @@ export default {
 <template>
     <!-- Top Banner Section -->
     <div class="bg-colDarkGrey">
-        <div class="max-w-[920px] mx-auto border flex justify-between items-center text-gray-400 py-2 text-xs">
+        <div class="max-w-[920px] mx-auto flex justify-between items-center text-gray-400 py-2 text-xs">
             <small>We have a 95% Successful Pass Rate!</small>
             <a :href="`tel:${phoneNum}`" class="px-2">
                 <font-awesome-icon icon="fa-solid fa-phone-flip" class="inline mx-2" />
@@ -34,7 +34,7 @@ export default {
         <HeaderNavMenu :menuItems="menuItems" />
 
         <!-- Hero MVP -->
-        <section class="max-w-[920px] mx-auto border h-[484px] flex flex-col justify-center gap-y-3 text-white">
+        <section class="max-w-[920px] mx-auto h-[484px] flex flex-col justify-center gap-y-3 text-white">
             <h1 class="text-4xl font-bold">Drive with Avada</h1>
             <p>We offer the finest driving tuition money can buy</p>
         </section>

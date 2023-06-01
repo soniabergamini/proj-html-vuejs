@@ -10,7 +10,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
 import { faWindowRestore } from '@fortawesome/free-solid-svg-icons'
-// import { faStar as farFaStar } from '@fortawesome/free-regular-svg-icons'
-library.add(faPhoneFlip, faWindowRestore)
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

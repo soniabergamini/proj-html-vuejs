@@ -24,8 +24,9 @@ export default {
   <header>
     <PageHeader :phoneNum="store.phoneNumber" :menuItems="store.menuItems" />
   </header>
-  <main class="min-h-[300dvh] bg-amber-300 text-colGrey">
-    <PageMain :phoneNum="store.phoneNumber" :courseList="store.courseList" :succesRate="store.succesRate" />
+  <main class="min-h-[400dvh] bg-white text-colGrey">
+    <PageMain :phoneNum="store.phoneNumber" :courseList="store.courseList" :succesRate="store.succesRate"
+      :instructors="store.instructors" />
   </main>
   <footer>
     <PageFooter />

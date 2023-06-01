@@ -16,7 +16,7 @@ export default {
 
 <template>
     <section class="bg-courses-section bg-cover bg-bottom relative">
-        <div class="max-w-[920px] mx-auto border">
+        <div class="max-w-[920px] mx-auto">
 
             <!-- Courses Presentation -->
             <section class="flex justify-between gap-x-10 items-start h-[330px]">
