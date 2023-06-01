@@ -26,7 +26,7 @@ export default {
   </header>
   <main class="min-h-[400dvh] bg-white text-colGrey">
     <PageMain :phoneNum="store.phoneNumber" :courseList="store.courseList" :succesRate="store.succesRate"
-      :instructors="store.instructors" />
+      :instructors="store.instructors" :testimonials="store.testimonials" />
   </main>
   <footer>
     <PageFooter />

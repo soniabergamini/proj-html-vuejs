@@ -18,7 +18,8 @@ export default {
       backgroundImage: {
         'hero-section': "url('../assets/images/homepage-hero-background.jpg')",
         'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')",
-        'courses-section': "url('../assets/images/promise-background.jpg')"
+        'courses-section': "url('../assets/images/promise-background.jpg')",
+        'testimonials-section': "url('../assets/images/testimonial-background.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'

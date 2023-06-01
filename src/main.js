@@ -13,6 +13,7 @@ import { faWindowRestore } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter)
+import { faCircle } from '@fortawesome/free-regular-svg-icons'
+library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter, faCircle)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

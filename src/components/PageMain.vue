@@ -4,6 +4,7 @@ import MainCTABanner from './MainCTABanner.vue'
 import MainCourses from './MainCourses.vue'
 import MainSuccessRate from './MainSuccessRate.vue'
 import MainInstructors from './MainInstructors.vue'
+import MainTestimonials from './MainTestimonials.vue'
 
 export default {
     name: "PageMain",
@@ -12,13 +13,15 @@ export default {
         MainCTABanner,
         MainCourses,
         MainSuccessRate,
-        MainInstructors
+        MainInstructors,
+        MainTestimonials
     },
     props: {
         phoneNum: String,
         courseList: Array,
         succesRate: Array,
-        instructors: Array
+        instructors: Array,
+        testimonials: Array
     }
 }
 
@@ -39,6 +42,8 @@ export default {
     <MainInstructors :instructors="instructors" />
 
     <!-- Testimonials Section -->
+    <MainTestimonials :testimonials="testimonials" />
+
     <!-- News Section -->
     <!-- Newsletter Banner -->
 </template>
