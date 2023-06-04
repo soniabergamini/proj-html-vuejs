@@ -19,7 +19,8 @@ export default {
         'hero-section': "url('../assets/images/homepage-hero-background.jpg')",
         'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')",
         'courses-section': "url('../assets/images/promise-background.jpg')",
-        'testimonials-section': "url('../assets/images/testimonial-background.jpg')"
+        'testimonials-section': "url('../assets/images/testimonial-background.jpg')",
+        'news-section': "url('../assets/images/latestnews-background.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'
@@ -31,6 +32,9 @@ export default {
       },
       animation: {
         rotate: 'progress 1s ease-out forwards'
+      },
+      boxShadow: {
+        '3xl': '0 40px 50px -10px rgba(0, 0, 0, 0.6)',
       }
     },
   },

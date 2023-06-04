@@ -5,6 +5,7 @@ import MainCourses from './MainCourses.vue'
 import MainSuccessRate from './MainSuccessRate.vue'
 import MainInstructors from './MainInstructors.vue'
 import MainTestimonials from './MainTestimonials.vue'
+import MainNews from './MainNews.vue'
 
 export default {
     name: "PageMain",
@@ -14,14 +15,16 @@ export default {
         MainCourses,
         MainSuccessRate,
         MainInstructors,
-        MainTestimonials
+        MainTestimonials,
+        MainNews
     },
     props: {
         phoneNum: String,
         courseList: Array,
         succesRate: Array,
         instructors: Array,
-        testimonials: Array
+        testimonials: Array,
+        news: Array
     }
 }
 
@@ -44,7 +47,9 @@ export default {
     <!-- Testimonials Section -->
     <MainTestimonials :testimonials="testimonials" />
 
-    <!-- News Section -->
+    <!-- Latest News Section -->
+    <MainNews :news="news" />
+
     <!-- Newsletter Banner -->
 </template>
 

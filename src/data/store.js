@@ -32,5 +32,21 @@ export const store = reactive({
         { name: 'Kate Smith', img: 'testimonial-kate.png', bio: 'Avada Driving School really helped my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.' },
         { name: 'Harold Garcia', img: 'testimonial-harold.png', bio: 'Avada Driving School really helped my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.' },
         { name: 'Grant Johnson', img: 'testimonial-grant.png', bio: 'Avada Driving School really helped my confidence behind the wheel and with driving in general, and they got me a first time pass! Highly recommended.' },
+    ],
+    news: [
+        {
+            title: "What Car to Start With?",
+            date: "February 7th, 2019",
+            comments: 0,
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero excepturi, repellendus laborum ab nihil dolore earum deserunt nisi dicta? Facilis cumque, illo at omnis nulla in ipsum esse nesciunt.",
+            img: "blog-choosecar-320x202.jpg"
+        },
+        {
+            title: "Avada Driving School Expanding",
+            date: "April 14th, 2019",
+            comments: 0,
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero excepturi, repellendus laborum ab nihil dolore earum deserunt nisi dicta? Facilis cumque, illo at omnis nulla in ipsum esse nesciunt.",
+            img: "blogpost-10and2-320x202.jpg"
+        }
     ]
 });

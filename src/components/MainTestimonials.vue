@@ -20,8 +20,8 @@ export default {
 </script>
 
 <template>
-    <section class="bg-testimonials-section bg-cover border">
-        <div class="max-w-[920px] mx-auto my-12 text-center border">
+    <section class="bg-testimonials-section bg-cover border py-20 mt-[-150px]">
+        <div class="max-w-[920px] mx-auto my-12 text-center">
 
             <!-- Testimonials Carousel -->
             <div class="flex flex-col items-center gap-y-4">
@@ -32,7 +32,7 @@ export default {
                 <small class="w-[50%]">
                     <i>"{{ testimonials[currentSlide].bio }}"</i>
                 </small>
-                <h5 class="font-bold text-sm">{{ testimonials[currentSlide].name }}</h5>
+                <h5 class="font-bold text-sm my-2">{{ testimonials[currentSlide].name }}</h5>
                 <div class="flex gap-x-2">
                     <template v-for="(item, i) in testimonials">
                         <font-awesome-icon :icon="['far', 'circle']" size="2xs"
@@ -43,7 +43,6 @@ export default {
             </div>
 
         </div>
-
     </section>
 </template>
 
