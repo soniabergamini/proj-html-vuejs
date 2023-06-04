@@ -1,13 +1,14 @@
 <script>
+import { helpers } from '../data/helpers';
 
 export default {
     name: "MainCourses",
     props: {
         courseList: Array
     },
-    methods: {
-        getImgPath(img) {
-            return new URL(`../assets/images/${img}`, import.meta.url).href;
+    data() {
+        return {
+            helpers
         }
     }
 }
@@ -37,7 +38,7 @@ export default {
                 <div class="w-[60%] flex justify-between text-center items-center pt-4 pb-2">
                     <div v-for="course in courseList">
                         <a href="#">
-                            <img :src="getImgPath(course.img)" :alt="`${course.name}-img`"
+                            <img :src="helpers.getImgPath(course.img)" :alt="`${course.name}-img`"
                                 class="max-h-[150px] max-w-[150px]">
                         </a>
                         <h4 class="font-bold text-colBlue my-2">{{ course.name }}</h4>

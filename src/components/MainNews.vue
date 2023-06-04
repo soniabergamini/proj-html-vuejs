@@ -1,13 +1,14 @@
 <script>
+import { helpers } from '../data/helpers';
 
 export default {
     name: "MainNews",
     props: {
         news: Array
     },
-    methods: {
-        getImgPath(img) {
-            return new URL(`../assets/images/${img}`, import.meta.url).href;
+    data() {
+        return {
+            helpers
         }
     }
 }
@@ -25,7 +26,7 @@ export default {
                 <template v-for="article in news">
                     <article class="max-w-[47%]">
                         <figure>
-                            <img :src="getImgPath(article.img)" alt="blog-news"
+                            <img :src="helpers.getImgPath(article.img)" alt="blog-news"
                                 class="w-[400px] h-[250px] object-cover cursor-pointer">
                         </figure>
                         <div class="w-full px-7">

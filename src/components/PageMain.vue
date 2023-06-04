@@ -6,6 +6,7 @@ import MainSuccessRate from './MainSuccessRate.vue'
 import MainInstructors from './MainInstructors.vue'
 import MainTestimonials from './MainTestimonials.vue'
 import MainNews from './MainNews.vue'
+import MainNewsletter from './MainNewsletter.vue'
 
 export default {
     name: "PageMain",
@@ -16,7 +17,8 @@ export default {
         MainSuccessRate,
         MainInstructors,
         MainTestimonials,
-        MainNews
+        MainNews,
+        MainNewsletter
     },
     props: {
         phoneNum: String,
@@ -51,6 +53,7 @@ export default {
     <MainNews :news="news" />
 
     <!-- Newsletter Banner -->
+    <MainNewsletter />
 </template>
 
 <style lang="scss" scoped>

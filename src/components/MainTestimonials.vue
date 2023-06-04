@@ -1,4 +1,5 @@
 <script>
+import { helpers } from '../data/helpers';
 
 export default {
     name: "MainTestimonials",
@@ -7,12 +8,8 @@ export default {
     },
     data() {
         return {
+            helpers,
             currentSlide: 0
-        }
-    },
-    methods: {
-        getImgPath(img) {
-            return new URL(`../assets/images/${img}`, import.meta.url).href;
         }
     }
 }
@@ -27,7 +24,8 @@ export default {
             <div class="flex flex-col items-center gap-y-4">
                 <h2 class="text-3xl mb-4 text-colDarkGrey font-bold">Testimonials</h2>
                 <p class="mb-3">Here what's our happy drivers had to say about our services:</p>
-                <img :src="getImgPath(testimonials[currentSlide].img)" :alt="`${testimonials[currentSlide].img}-img`"
+                <img :src="helpers.getImgPath(testimonials[currentSlide].img)"
+                    :alt="`${testimonials[currentSlide].img}-img`"
                     class="w-[130px] h-[130px] object-cover	object-center rounded-full">
                 <small class="w-[50%]">
                     <i>"{{ testimonials[currentSlide].bio }}"</i>

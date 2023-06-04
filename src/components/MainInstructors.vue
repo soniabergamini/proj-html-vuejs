@@ -1,13 +1,14 @@
 <script>
+import { helpers } from '../data/helpers';
 
 export default {
     name: "MainInstructors",
     props: {
         instructors: Array
     },
-    methods: {
-        getImgPath(img) {
-            return new URL(`../assets/images/${img}`, import.meta.url).href;
+    data() {
+        return {
+            helpers
         }
     }
 }
@@ -37,7 +38,7 @@ export default {
             <div id="instructorCards" class="flex justify-between items-start py-7 gap-x-7">
                 <div v-for="instructor in instructors"
                     class="w-1/3 border-t-primarySalmon border-t-4 rounded-lg bg-white shadow-xl flex flex-col items-center text-center py-6 px-3">
-                    <img :src="getImgPath(instructor.img)" :alt="`${instructor.name}-img`" class="mb-7">
+                    <img :src="helpers.getImgPath(instructor.img)" :alt="`${instructor.name}-img`" class="mb-7">
                     <h3 class="font-bold">{{ instructor.name }}</h3>
                     <div class="flex text-xs justify-center items-center gap-x-3 my-3">
                         <a href="#">
