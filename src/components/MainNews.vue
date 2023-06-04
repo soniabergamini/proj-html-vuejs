@@ -15,9 +15,9 @@ export default {
 </script>
 
 <template>
-    <section class="bg-news-section bg-cover bg-bottom h-[700px]">
+    <section class="bg-news-section bg-cover bg-bottom">
         <div
-            class="max-w-[920px] mx-auto border-t-colBlue border-t-4 rounded-t-lg bg-white shadow-3xl h-[600px] relative top-[-50px] text-center pt-14">
+            class="max-w-[920px] mx-auto border-t-colBlue border-t-4 rounded-t-lg bg-white shadow-3xl relative top-[-50px] text-center pt-14">
             <h2 class="text-3xl mb-4 text-colDarkGrey font-bold">Latest News</h2>
 
             <!-- News Cards -->
@@ -28,7 +28,7 @@ export default {
                             <img :src="getImgPath(article.img)" alt="blog-news"
                                 class="w-[400px] h-[250px] object-cover cursor-pointer">
                         </figure>
-                        <div class="border w-full">
+                        <div class="w-full px-7">
                             <h4 class="font-bold text-primarySalmon mt-4 text-lg cursor-pointer">{{ article.title }}</h4>
                             <small class="text-xs"> {{ article.date }} | <a href="#" class="text-primarySalmon">{{
                                 article.comments }} Comments</a></small>

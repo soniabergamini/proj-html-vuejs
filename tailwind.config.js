@@ -20,7 +20,8 @@ export default {
         'cta-banner': "url('../assets/images/horizontal-cta-background.jpg')",
         'courses-section': "url('../assets/images/promise-background.jpg')",
         'testimonials-section': "url('../assets/images/testimonial-background.jpg')",
-        'news-section': "url('../assets/images/latestnews-background.jpg')"
+        'news-section': "url('../assets/images/latestnews-background.jpg')",
+        'newsletter-section': "url('../assets/images/newsletter_background.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'
