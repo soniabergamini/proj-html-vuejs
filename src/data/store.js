@@ -3,6 +3,9 @@ import { reactive } from 'vue'
 export const store = reactive({
     loading: true,
     phoneNumber: "1-800-555-555",
+    address: "12345 North Moin Street, New York, NY 555555",
+    email: "info@avada.com",
+    website: "Theme-Fusion.com",
     menuItems: [
         "home",
         "about",

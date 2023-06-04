@@ -21,7 +21,8 @@ export default {
         'courses-section': "url('../assets/images/promise-background.jpg')",
         'testimonials-section': "url('../assets/images/testimonial-background.jpg')",
         'news-section': "url('../assets/images/latestnews-background.jpg')",
-        'newsletter-section': "url('../assets/images/newsletter_background.jpg')"
+        'newsletter-section': "url('../assets/images/newsletter_background.jpg')",
+        'footer': "url('../assets/images/footer-background-color.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'

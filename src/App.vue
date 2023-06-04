@@ -28,8 +28,9 @@ export default {
     <PageMain :phoneNum="store.phoneNumber" :courseList="store.courseList" :succesRate="store.succesRate"
       :instructors="store.instructors" :testimonials="store.testimonials" :news="store.news" />
   </main>
-  <footer>
-    <PageFooter />
+  <footer class="text-colGrey">
+    <PageFooter :phoneNum="store.phoneNumber" :address="store.address" :email="store.email" :website="store.website"
+      :courseList="store.courseList" />
   </footer>
 </template>
 

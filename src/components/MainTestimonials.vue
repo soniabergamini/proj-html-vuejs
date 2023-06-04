@@ -28,9 +28,9 @@ export default {
                     :alt="`${testimonials[currentSlide].img}-img`"
                     class="w-[130px] h-[130px] object-cover	object-center rounded-full">
                 <small class="w-[50%]">
-                    <i>"{{ testimonials[currentSlide].bio }}"</i>
+                    <i class="tracking-[1.5px]">"{{ testimonials[currentSlide].bio }}"</i>
                 </small>
-                <h5 class="font-bold text-sm my-2">{{ testimonials[currentSlide].name }}</h5>
+                <h5 class="font-bold text-sm my-2 tracking-[1.5px]">{{ testimonials[currentSlide].name }}</h5>
                 <div class="flex gap-x-2">
                     <template v-for="(item, i) in testimonials">
                         <font-awesome-icon :icon="['far', 'circle']" size="2xs"
@@ -46,9 +46,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
-
-small>i,
-h5 {
-    letter-spacing: 1.5px;
-}
 </style>
