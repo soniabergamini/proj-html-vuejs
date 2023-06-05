@@ -43,7 +43,7 @@ export default {
 
         <!-- Button Up -->
         <div class="text-right px-10 py-1">
-            <a href="headerSec" class="bg-colDarkGrey px-2 py-0.5 hover:bg-primarySalmon hover:scale-125">
+            <a href="#headerSec" class="bg-colDarkGrey px-2 py-0.5 hover:bg-primarySalmon hover:scale-125">
                 <font-awesome-icon :icon="['fas', 'chevron-up']" size="xs" class="inline" />
             </a>
         </div>

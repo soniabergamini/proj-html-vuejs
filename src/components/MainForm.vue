@@ -33,7 +33,7 @@ export default {
                 <small class="mb-7 block px-3"> When you make a block booking with us your first lesson is
                     included
                     free.</small>
-                <form action="#" class="text-xs flex flex-col gap-y-6 justify-center">
+                <form action="#" @submit.prevent class="text-xs flex flex-col gap-y-6 justify-center">
                     <div class="relative">
                         <input class="border bg-terLightGrey p-3 w-full" type="text" name="formName" id="formName"
                             placeholder="Your Name*" required>

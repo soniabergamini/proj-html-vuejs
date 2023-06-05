@@ -56,12 +56,12 @@ export default {
                 <h4 class="font-bold text-white tracking-[2px]">COURSES</h4>
                 <ul>
                     <li class="text-primarySalmon my-2" v-for="item in courseList">
-                        <a href="#" class="hover:text-colGrey">
+                        <a href="#coursesSec" class="hover:text-colGrey">
                             <font-awesome-icon :icon="['far', 'circle-right']" class="inline mx-2" />{{ item.name }}
                         </a>
                     </li>
                     <li class="text-primarySalmon my-2">
-                        <a href="#" class="hover:text-colGrey">
+                        <a href="#coursesSec" class="hover:text-colGrey">
                             <font-awesome-icon :icon="['far', 'circle-right']" class="inline mx-2" />Automatic
                         </a>
                     </li>

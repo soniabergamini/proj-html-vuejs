@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <section class="bg-courses-section bg-cover bg-bottom relative">
+    <section id="coursesSec" class="bg-courses-section bg-cover bg-bottom relative">
         <div class="max-w-[920px] mx-auto">
 
             <!-- Courses Presentation -->
