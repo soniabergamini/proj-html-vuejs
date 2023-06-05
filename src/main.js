@@ -18,6 +18,9 @@ import { faHouseChimney } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faCircleRight } from '@fortawesome/free-regular-svg-icons'
-library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter, faCircle, faHouseChimney, faEnvelope, faLink, faCircleRight)
+import { faCopyright } from '@fortawesome/free-regular-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter, faCircle, faHouseChimney, faEnvelope, faLink, faCircleRight, faCopyright, faYoutube, faChevronUp)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

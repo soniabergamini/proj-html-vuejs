@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <section class="bg-testimonials-section bg-cover border py-20 mt-[-150px]">
+    <section class="bg-testimonials-section bg-cover py-20 mt-[-150px]">
         <div class="max-w-[920px] mx-auto my-12 text-center">
 
             <!-- Testimonials Carousel -->

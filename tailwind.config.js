@@ -13,7 +13,8 @@ export default {
         terLightGrey: '#F6F6F6',
         colDarkGrey: '#494C4E',
         colGrey: '#929AA3',
-        colBlue: '#7799AD'
+        colBlue: '#7799AD',
+        footerDark: '#1C1D1E'
       },
       backgroundImage: {
         'hero-section': "url('../assets/images/homepage-hero-background.jpg')",
@@ -22,7 +23,7 @@ export default {
         'testimonials-section': "url('../assets/images/testimonial-background.jpg')",
         'news-section': "url('../assets/images/latestnews-background.jpg')",
         'newsletter-section': "url('../assets/images/newsletter_background.jpg')",
-        'footer': "url('../assets/images/footer-background-color.jpg')"
+        // 'footer': "url('../assets/images/footer-background-color.jpg')"
       },
       fontFamily: {
         'nunito-sans': 'Nunito Sans, sans-serif'

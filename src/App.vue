@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header id="headerSec">
     <PageHeader :phoneNum="store.phoneNumber" :menuItems="store.menuItems" />
   </header>
   <main class="bg-white text-colGrey">
