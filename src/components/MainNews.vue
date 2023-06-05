@@ -8,7 +8,8 @@ export default {
     },
     data() {
         return {
-            helpers
+            helpers,
+            newsToShow: 2
         }
     }
 }
@@ -22,9 +23,9 @@ export default {
             <h2 class="text-3xl mb-4 text-colDarkGrey font-bold">Latest News</h2>
 
             <!-- News Cards -->
-            <div class="flex justify-center gap-8 items-start my-10 mx-10">
-                <template v-for="article in news">
-                    <article class="max-w-[47%]">
+            <div class="flex justify-center gap-8 items-start my-10 mx-10 flex-wrap">
+                <template v-for="(article, i) in news">
+                    <article v-show="i < newsToShow" class="w-[calc(100%/2-32px)]">
                         <figure>
                             <img :src="helpers.getImgPath(article.img)" alt="blog-news"
                                 class="w-[400px] h-[250px] object-cover cursor-pointer">
@@ -41,7 +42,7 @@ export default {
             </div>
 
             <!-- News Button -->
-            <button
+            <button @click.once="newsToShow += 2" :class="newsToShow >= news.length ? 'invisible' : null"
                 class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon text-white font-bold text-xs">
                 MORE FROM THE BLOG</button>
 
