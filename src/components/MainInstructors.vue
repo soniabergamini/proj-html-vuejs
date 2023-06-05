@@ -8,7 +8,8 @@ export default {
     },
     data() {
         return {
-            helpers
+            helpers,
+            currentMouseover: ''
         }
     }
 }
@@ -36,8 +37,9 @@ export default {
 
             <!-- Instructors Cards -->
             <div id="instructorCards" class="flex justify-between items-start py-7 gap-x-7">
-                <div v-for="instructor in instructors"
-                    class="w-1/3 border-t-primarySalmon border-t-4 rounded-lg bg-white shadow-xl flex flex-col items-center text-center py-6 px-3">
+                <div v-for="(instructor, i) in instructors"
+                    class="w-1/3 border-t-primarySalmon border-t-4 rounded-lg bg-white shadow-xl flex flex-col items-center text-center py-6 px-3 relative"
+                    @mouseenter="currentMouseover = i" @mouseleave="currentMouseover = ''">
                     <img :src="helpers.getImgPath(instructor.img)" :alt="`${instructor.name}-img`" class="mb-7">
                     <h3 class="font-bold">{{ instructor.name }}</h3>
                     <div class="flex text-xs justify-center items-center gap-x-3 my-3">
@@ -53,6 +55,13 @@ export default {
                         </a>
                     </div>
                     <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae quod!</small>
+
+                    <!-- Card Tooltip -->
+                    <div v-show="currentMouseover === i"
+                        class="border text-[10px] text-colDarkGrey border-colDarkGrey px-1 absolute bg-white top-[40%]">
+                        instructor-{{ instructor.name.toLowerCase().split(' ').join('') }}
+                    </div>
+
                 </div>
             </div>
 
