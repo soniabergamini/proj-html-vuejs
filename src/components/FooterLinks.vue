@@ -19,33 +19,38 @@ export default {
             <!-- Logo & About  -->
             <div class="w-[calc(100%/4-10px)]">
                 <img src="src/assets/images/avada-drivers-logo-2x-200x39.png" alt="avada-logo">
-                <p class="mt-3">Avada Driving School is the right choice for experienced drivers lookinf for a refresher
+                <p class="text-colGrey mt-3">Avada Driving School is the right choice for experienced drivers lookinf for a
+                    refresher
                     course, or the brand new driver wanting to pass fort time.</p>
             </div>
 
             <!-- Contact Details -->
-            <div class="w-[calc(100%/4-10px)]">
-                <h4 class="font-bold text-white text-sm tracking-[2px]">CONTACT DETAILS</h4>
-                <ul>
-                    <li class="hover:text-primarySalmon my-2">
+            <div class="w-[calc(100%/4-10px)] px-3">
+                <h4 class="font-bold text-sm tracking-[2px]">CONTACT DETAILS</h4>
+                <ul class="text-colGrey">
+                    <li class="hover:text-primarySalmon my-3">
                         <a href="#" class="flex">
-                            <font-awesome-icon :icon="['fas', 'house-chimney']" size="xs" class="inline mx-2 self-center" />
+                            <font-awesome-icon :icon="['fas', 'house-chimney']" size="sm"
+                                class="inline mx-2 self-center text-white" />
                             <span>{{ address }} </span>
                         </a>
                     </li>
-                    <li class="hover:text-primarySalmon my-2">
+                    <li class="hover:text-primarySalmon my-3">
                         <a :href="`tel:${phoneNum}`">
-                            <font-awesome-icon :icon="['fas', 'phone-flip']" size="xs" class="inline mx-2" />{{ phoneNum }}
+                            <font-awesome-icon :icon="['fas', 'phone-flip']" size="sm" class="inline mx-2 text-white" />{{
+                                phoneNum }}
                         </a>
                     </li>
-                    <li class="hover:text-primarySalmon my-2">
+                    <li class="hover:text-primarySalmon my-3">
                         <a :href="`mailto:${email}`">
-                            <font-awesome-icon :icon="['far', 'envelope']" size="xs" class="inline mx-2" />{{ email }}
+                            <font-awesome-icon :icon="['far', 'envelope']" size="sm" class="inline mx-2 text-white" />{{
+                                email }}
                         </a>
                     </li>
-                    <li class="hover:text-primarySalmon my-2">
+                    <li class="hover:text-primarySalmon my-3">
                         <a :href="`https://${website}`">
-                            <font-awesome-icon :icon="['fas', 'link']" size="xs" class="inline mx-2" />{{ website }}
+                            <font-awesome-icon :icon="['fas', 'link']" size="sm" class="inline mx-2 text-white" />{{ website
+                            }}
                         </a>
                     </li>
                 </ul>
@@ -53,14 +58,14 @@ export default {
 
             <!-- All Courses -->
             <div class="w-[calc(100%/4-10px)] text-sm">
-                <h4 class="font-bold text-white tracking-[2px]">COURSES</h4>
+                <h4 class="font-bold tracking-[2px]">COURSES</h4>
                 <ul>
-                    <li class="text-primarySalmon my-2" v-for="item in courseList">
+                    <li class="text-primarySalmon my-3" v-for="item in courseList">
                         <a href="#coursesSec" class="hover:text-colGrey">
                             <font-awesome-icon :icon="['far', 'circle-right']" class="inline mx-2" />{{ item.name }}
                         </a>
                     </li>
-                    <li class="text-primarySalmon my-2">
+                    <li class="text-primarySalmon my-3">
                         <a href="#coursesSec" class="hover:text-colGrey">
                             <font-awesome-icon :icon="['far', 'circle-right']" class="inline mx-2" />Automatic
                         </a>

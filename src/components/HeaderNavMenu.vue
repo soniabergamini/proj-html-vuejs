@@ -35,4 +35,14 @@ export default {
 
 <style lang="scss" scoped>
 @use '../style/variables.scss' as *;
+
+div>a:nth-child(4)::after {
+    content: 'NEW';
+    background-color: $primarySalmon;
+    margin-left: .5em;
+    vertical-align: top;
+    font-size: .6rem;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+}
 </style>
