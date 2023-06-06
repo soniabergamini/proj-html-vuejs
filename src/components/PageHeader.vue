@@ -9,7 +9,8 @@ export default {
     },
     props: {
         phoneNum: String,
-        menuItems: Array
+        menuItems: Array,
+        courseList: Array
     },
 }
 
@@ -31,7 +32,7 @@ export default {
     <section class="bg-hero-section bg-cover h-[580px]">
 
         <!-- Nav Menu Banner -->
-        <HeaderNavMenu :menuItems="menuItems" />
+        <HeaderNavMenu :menuItems="menuItems" :courseList="courseList" />
 
         <!-- Hero MVP -->
         <section class="max-w-[920px] mx-auto h-[484px] flex flex-col justify-center gap-y-3 text-white">

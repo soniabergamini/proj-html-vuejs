@@ -22,7 +22,7 @@ export default {
 
 <template>
   <header id="headerSec">
-    <PageHeader :phoneNum="store.phoneNumber" :menuItems="store.menuItems" />
+    <PageHeader :phoneNum="store.phoneNumber" :menuItems="store.menuItems" :courseList="store.courseList" />
   </header>
   <main class="bg-white text-colGrey">
     <PageMain :phoneNum="store.phoneNumber" :courseList="store.courseList" :succesRate="store.succesRate"
