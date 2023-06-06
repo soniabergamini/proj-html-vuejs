@@ -1,14 +1,20 @@
 <script>
 import { helpers } from '../data/helpers';
+import MainPriceTable from './MainPriceTable.vue'
 
 export default {
     name: "MainCourses",
+    components: {
+        MainPriceTable
+    },
     props: {
-        courseList: Array
+        courseList: Array,
+        phoneNum: String
     },
     data() {
         return {
-            helpers
+            helpers,
+            showPriceTable: false
         }
     }
 }
@@ -20,7 +26,7 @@ export default {
         <div class="max-w-[920px] mx-auto">
 
             <!-- Courses Presentation -->
-            <section class="flex justify-between gap-x-10 items-start h-[330px]">
+            <section class="flex justify-between gap-x-10 items-start pb-20">
 
                 <!-- Courses Info -->
                 <div class="w-[40%] rounded-xl z-10 bg-white shadow-xl text-center pt-7 px-8 pb-14 mt-[-25px] relative">
@@ -42,18 +48,22 @@ export default {
                                 class="max-h-[150px] max-w-[150px]">
                         </a>
                         <h4 class="font-bold text-colBlue my-2">{{ course.name }}</h4>
-                        <button
+                        <button @click="showPriceTable = !showPriceTable"
                             class="border-2 border-colBlue py-1 px-3 rounded-full hover:bg-colBlue hover:text-white hover:border-colBlue text-colBlue font-bold text-[10px]">
-                            LEARN MORE</button>
+                            {{ showPriceTable == true ? 'SHOW LESS' : 'LEARN MORE' }}</button>
                     </div>
                 </div>
 
             </section>
+
+            <!-- Additional Section: Price Table -->
+            <MainPriceTable :showPriceTable="showPriceTable" :phoneNum="phoneNum" :courseList="courseList" />
+
         </div>
     </section>
 
     <!-- Courses Section: Background Triangle -->
-    <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+    <svg class=" fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
         viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#e4eaed;padding:0;">
         <path d="M-1 -1 L50 99 L101 -1 Z"></path>
     </svg>

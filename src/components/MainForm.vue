@@ -35,15 +35,15 @@ export default {
                     free.</small>
                 <form action="#" @submit.prevent class="text-xs flex flex-col gap-y-6 justify-center">
                     <div class="relative">
-                        <input class="border bg-terLightGrey p-3 w-full" type="text" name="formName" id="formName"
+                        <input class="border bg-colLightGrey p-3 w-full" type="text" name="formName" id="formName"
                             placeholder="Your Name*" required>
                         <img src="../assets/images/image.png" alt="input-icon" class="absolute top-[35%] right-1">
                     </div>
-                    <input class="border bg-terLightGrey p-3" type="email" name="formEmail" id="formEmail"
+                    <input class="border bg-colLightGrey p-3" type="email" name="formEmail" id="formEmail"
                         placeholder="Email*" required>
-                    <input class="border bg-terLightGrey p-3" type="tel" name="formPhone" id="formPhone"
+                    <input class="border bg-colLightGrey p-3" type="tel" name="formPhone" id="formPhone"
                         placeholder="Telephone" pattern="[0-9]{10}">
-                    <input class="border bg-terLightGrey p-3" type="text" name="formLocation" id="formLocation"
+                    <input class="border bg-colLightGrey p-3" type="text" name="formLocation" id="formLocation"
                         placeholder="Location">
                     <button type="submit"
                         class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon text-white font-bold self-center">REQUEST

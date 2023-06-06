@@ -9,8 +9,7 @@ export default {
       colors: {
         primarySalmon: '#EC7357',
         // primaryGreen: '#7ABC64',
-        secWhite: '#FFFFFF',
-        terLightGrey: '#F6F6F6',
+        colLightGrey: '#F6F6F6',
         colDarkGrey: '#494C4E',
         colGrey: '#929AA3',
         colBlue: '#7799AD',

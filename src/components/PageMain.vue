@@ -40,7 +40,7 @@ export default {
     <MainCTABanner :phoneNum="phoneNum" />
 
     <!-- Courses Section -->
-    <MainCourses :courseList="courseList" />
+    <MainCourses :courseList="courseList" :phoneNum="phoneNum" />
     <MainSuccessRate :succesRate="succesRate" />
 
     <!-- Instructors Section -->

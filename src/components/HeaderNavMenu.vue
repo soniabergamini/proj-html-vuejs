@@ -53,8 +53,8 @@ export default {
                 <a href="#" class="hover:text-primarySalmon hover:border-b-2 border-primarySalmon h-6">LOCATIONS</a>
                 <a href="#" class="hover:text-primarySalmon hover:border-b-2 border-primarySalmon h-6">BLOG</a>
                 <button
-                    class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon">BOOK
-                    NOW</button>
+                    class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon">
+                    BOOK NOW</button>
             </div>
 
         </nav>

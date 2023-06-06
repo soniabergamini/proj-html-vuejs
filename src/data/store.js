@@ -21,9 +21,9 @@ export const store = reactive({
 
     // Courses List
     courseList: [
-        { name: 'Pass Plus', img: 'courses-passplus.jpg' },
-        { name: 'Intensive Course', img: 'course-intensive.jpg' },
-        { name: 'Instructors', img: 'courses-instructor.jpg' }
+        { name: 'Pass Plus', img: 'courses-passplus.jpg', price: 1900, details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis, hicnatus recusandae perferendis.' },
+        { name: 'Intensive Course', img: 'course-intensive.jpg', price: 2700, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore, atque exercitationem, animi, ut consequatur laudantium aliquid ratione ipsum eveniet explicabo laboriosam non suscipit reprehenderit illum dolorum consectetur. Quia, consectetur? Tenetur minima ducimus culpa. Molestiae non ut nemo eveniet molestias.' },
+        { name: 'Instructors', img: 'courses-instructor.jpg', price: 5900, details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis, hicnatus recusandae perferendis.' }
     ],
 
     // Avada Success Rates

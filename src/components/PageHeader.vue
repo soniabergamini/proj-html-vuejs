@@ -29,7 +29,7 @@ export default {
     </div>
 
     <!-- Hero Section -->
-    <section class="bg-hero-section bg-cover h-[580px]">
+    <section class="bg-hero-section bg-cover">
 
         <!-- Nav Menu Banner -->
         <HeaderNavMenu :menuItems="menuItems" :courseList="courseList" />

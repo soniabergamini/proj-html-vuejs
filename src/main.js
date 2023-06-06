@@ -22,6 +22,7 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter, faCircle, faHouseChimney, faEnvelope, faLink, faCircleRight, faCopyright, faYoutube, faChevronUp, faChevronDown)
+import { faShopify } from '@fortawesome/free-brands-svg-icons'
+library.add(faPhoneFlip, faWindowRestore, faInstagram, faFacebookF, faTwitter, faCircle, faHouseChimney, faEnvelope, faLink, faCircleRight, faCopyright, faYoutube, faChevronUp, faChevronDown, faShopify)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
