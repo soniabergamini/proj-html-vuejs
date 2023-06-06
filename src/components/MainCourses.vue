@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-    <section id="coursesSec" class="bg-courses-section bg-cover bg-bottom relative">
+    <section id="coursesSec" class="bg-courses-section bg-cover bg-bottom relative scroll-mt-[50px]">
         <div class="max-w-[920px] mx-auto">
 
             <!-- Courses Presentation -->
@@ -33,7 +33,7 @@ export default {
                     <h3 class="text-colDarkGrey text-2xl text-center mb-8 font-bold">Courses</h3>
                     <small class="mb-7 block px-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iusto
                         assumenda, pariatur animi sed corporis ipsam.</small>
-                    <button
+                    <button @click="showPriceTable = !showPriceTable"
                         class="bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon text-white font-bold text-xs">
                         COURSE INFORMATION</button>
                     <img src="../assets/images/new-corner.jpg" alt="new-img"

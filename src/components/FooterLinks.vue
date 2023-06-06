@@ -76,9 +76,9 @@ export default {
             <!-- Benefits -->
             <div class="w-[calc(100%/4-10px)] flex flex-col items-center gap-y-4 text-white">
                 <img src="../assets/images/footer-ad-grid-200x178.png" alt="benefits-img">
-                <button
-                    class="font-bold bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon w-[50%]">BOOK
-                    NOW</button>
+                <a href="#coursesSec"
+                    class="font-bold bg-primarySalmon border-2 border-primarySalmon py-2 px-4 rounded-full hover:bg-white hover:text-primarySalmon hover:border-primarySalmon w-[50%]">
+                    BOOK NOW</a>
             </div>
 
         </div>

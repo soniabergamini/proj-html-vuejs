@@ -14,7 +14,7 @@ export default {
 <template>
     <section id="priceTable" v-show="showPriceTable" class="flex flex-col items-center pb-20 mt-[-50px]">
         <h2 class="w-[80%] border-b-2 border-b-primarySalmon text-3xl pb-2 text-colDarkGrey font-bold">Pricing</h2>
-        <div class="w-[80%] flex gap-x-3">
+        <div class="w-[80%] flex gap-x-5">
 
             <!-- Courses Cards -->
             <div v-for="(item, i) in courseList"
