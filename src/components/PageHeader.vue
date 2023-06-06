@@ -43,16 +43,16 @@ export default {
     </section>
 
     <!-- Page Fixed Buttons -->
-    <div
+    <a href="#pageForm"
         class="h-14	w-14 fixed top-28 right-2 bg-white rounded-md text-black p-2 flex flex-col items-center justify-center cursor-pointer hover:bg-primarySalmon hover:text-white shadow-lg z-20">
         <font-awesome-icon icon="fa-solid fa-window-restore" size="xl" />
         <small class="text-[10px]">Demos</small>
-    </div>
-    <div
+    </a>
+    <a href="#coursesSec"
         class="h-14 w-14 fixed top-44 right-2 bg-white rounded-md text-black p-2 flex items-center flex-col justify-center cursor-pointer hover:bg-primarySalmon hover:text-white shadow-lg z-20">
         <span class="text-[#66BC7B] hover:text-white font-bold text-lg"><span class="text-xs align-top">$</span>39</span>
         <small class="text-[10px]">On Sale</small>
-    </div>
+    </a>
 </template>
 
 <style lang="scss" scoped>
